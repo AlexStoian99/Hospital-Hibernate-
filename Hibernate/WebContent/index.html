@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style1.css">
+        
+    </head>
+    <body>
+    
+    <nav class="navbar navbar-inverse">
+	<ul class="nav navbar-nav">
+	 <li><a href="index.html">Home</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+	 <li><a style="padding-right:3rem" href="adauga_Pacient.jsp">Pacienti</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+	 <li><a href="adauga_Medic.jsp">Medici</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+	 <li><a href="adauga_Consultatie.jsp">Consultatie</a></li>
+	</ul>
+	</nav>
+       <hr>
+	<br />
+	<h2> Spitalul Clinic de Urgenta PIBD</h2>
+	
+	<br />
+	<hr>
+	<p >Bine ati venit la Spitalul Clinic de Urgenta PIBD. Acest spital este unul dintre
+	   cele mai noi si revolutionare spitale din tara noastra. Noi folosim aparatura 
+	   de ultima generatie. </p>
+	
+	<hr>
+    <div style="width:300px; margin:0 auto;">
+     
+	<form style="padding-up: 100em;"action="PacientiController" method="POST">
+    	<input id='sub' type="submit" name="afiseazaPacienti" value="Pacienti"> 
+    </form>
+    
+    <form action="MediciController" method="POST">
+            <input id='sub' type="submit" name="afiseazaMedici" value="Medici"> 
+    </form>
+        
+    <form action="ConsultatieController" method="POST">
+    	<input id='sub'type="submit" name="afiseazaConsultatie" value="Consultatie"> 
+    </form>
+	</div>
+       
+        
+    </body>
+</html>
